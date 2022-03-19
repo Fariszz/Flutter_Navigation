@@ -81,8 +81,12 @@ class _MyHomePageState extends State<MyHomePage> {
               return const DetailScreen();
             }));
           },
-          child: Image.network(
-            'https://picsum.photos/250?image=9'
+          child: Hero
+            (
+              tag: 'imageHero',
+            child: Image.network(
+              'https://picsum.photos/250?image=9'
+            ),
           ),
         ));
   }
