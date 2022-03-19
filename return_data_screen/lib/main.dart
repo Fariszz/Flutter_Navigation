@@ -110,7 +110,7 @@ class SelectionScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  // Pop here with "Yep"...
+                  Navigator.pop(context, 'Yep!');
                 },
                 child: const Text('Yep!'),
               ),
@@ -119,7 +119,7 @@ class SelectionScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 onPressed: () {
-                  // Pop here with "Nope"...
+                  Navigator.pop(context, 'Nope.');
                 },
                 child: const Text('Nope.'),
               ),
